@@ -1,0 +1,104 @@
+<style type="text/css">
+	#textarea:focus
+{
+	border-width: 0px;
+	outline:0px solid #999;
+	box-shadow: 0px 0px 0px #ccc;
+}
+#textarea
+{
+	margin-left: 0.5%;
+	overflow-y: scroll !important;
+	border-width:0px;
+	font-family: consolas !important;
+	text-decoration: none;
+	vertical-align: top;
+	width: 98%;
+	word-break:keep-all;
+	text-overflow:ellipsis;
+	-webkit-word-wrap:normal !important;
+	float: left;
+	margin-top: 0px;
+	padding-top: 5px;
+	height: 40%;
+	background-color: transparent;
+	color: #fff;
+	webkit-user-modify: read-write;
+	-webkit-nbsp-mode: space;
+	-webkit-line-break: after-white-space;
+}
+::-webkit-scrollbar 
+{
+	width: 10px;
+	height: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track 
+{
+	/*-webkit-box-shadow: inset 0 0 6px rgba(55,0,0,0.3); 
+	*/-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #262626;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb 
+{
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: #494949; 
+	/*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);*/ 
+}
+::-webkit-scrollbar-thumb:window-inactive 
+{		
+	background: rgba(00,88,250,0.4); 
+}
+#context_menu
+{
+	width: auto;
+	height: auto;
+	position: absolute;
+	background-color: #fff;
+	cursor: pointer;
+	font-family: calibri !important;
+	padding: 1px;
+	border-radius: 2px !important;
+}
+#context_menu li
+{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border:1px solid transparent;
+	border-radius: 2px;
+	list-style: none;
+	color: #333;
+	padding-left: 15px;
+	padding-right: 40px;
+	text-align: left;
+}
+#context_menu li.disabled
+{
+	background-color: #fff !important;
+	color: #777 !important;
+	
+}
+#context_menu li.disabled:hover
+{
+	background-color: #f1f1f1 !important;
+	border-color: #ccc !important;
+}
+#context_menu li:hover
+{
+	background-color: #0081c2;
+	background-image: -webkit-linear-gradient(top,#08c,#0077b3);
+	color: #fff;
+}
+::selection
+{
+	background-color: rgba(255,255,255,0.15);
+}
+</style>
+<link rel='stylesheet' type='text/css' href='monkai_style.css'>
+<div id='context_menu'></div> 
+		<div id='textarea'  style='font-size: 20px;width:99.5%;height:99%;color:#fff;overflow-y:scroll !important;' contenteditable="true" ></div>
+		

@@ -1,0 +1,64 @@
+<html> 
+<head> 
+    <title>redAkt</title> 
+    <script type="text/javascript" src="AIRAliases.js"></script> 
+    <script type="text/javascript"> 
+        function appLoad(){ 
+            //air.trace(window.frames[0].document.getElementById('textarea').innerHTML);
+           // document.designMode = 'on';
+            redAkt.init(); 
+        }  
+    </script> 
+	<link rel='stylesheet' type='text/css' href='style.css'>
+	<link rel='stylesheet' type='text/css' href='monkai_style.css'>
+	<script src="rainbow.min.js"></script>
+	<script src="generic.js"></script>
+	<script src="html.js"></script>
+	<script src="javascript.js"></script>
+	<script src="python.js"></script>
+	<script src="lua.js"></script>
+	<script src="java.js"></script>
+	<script src="c.js"></script>
+	<script src="go.js"></script>
+	<script src="css.js"></script>
+	<!--<script type='text/javascript' src='jquery.min.js'></script>-->
+	<script type='text/javascript' src='script.js'></script>
+</head> 
+<body id='body'>
+<!--<div id='context_menu'>
+	<li id='copy' onclick='redAkt.copy()'>Copy</li>
+	<li>Cut</li>
+	<li>Paste</li>
+	<li class='disabled'>Show unsaved changes</li>
+	<li>Select All</li>
+	<li>Open Containing Folder</li>
+	<li>Copy file Path</li>
+	<li>Reveal in side Bar</li>
+	<li class='disabled'>© Shashank</li>
+</div>--> 
+<div id='actual' style="background-color:rgba(0,0,0,0.6);background-image:url('file:///C:/Users/SHASHANK JAISWAL/Pictures/Untitled-1 (3).png');">
+		<div id='resize_top' onmousedown="nativeWindow.startResize(air.NativeWindowResize.TOP_LEFT)" style='height:2%;width:100%;background-color:#555;cursor:pointer;'></div>
+		<div id='header' onmousedown="redAkt.w_Move()" ondblclick="redAkt.restore()">
+			<div id='left'>
+				<div id='doc_title'>redAkt</div>
+				<div id='tabs'></div>
+			</div>
+			<div id='right'>
+				<button style='border-bottom-right-radius: 5px;' onclick='redAkt.quit()'>X</button>
+				<button  onclick='redAkt.restore()'>-</button>
+				<button style='border-bottom-left-radius: 5px;' onclick='redAkt.minimize()'>-</button>
+			</div>
+		</div>
+		<iframe onLoad="appLoad()"   onfocus="redAkt.w_focus()" id='textarea' src='textbox.html'  style='font-size: 20px;overflow:none;width:99%;height:90%;' scrolling="no" seamless="seamless" frameborder="0" contenteditable="true"  allowtransparency="true" onmousedown="redAkt.textarea_contextmenu(event)"></iframe>
+</div>
+<!--<div id='footer'>
+	<div style='float:left;'>  ››  </div>
+	<div style='float:left;position:relative;width:95%;'>
+	<input type='text' id='cmd' onfocus='redAkt.input_focus()' onblur='redAkt.input_blur()' onkeydown="redAkt.cmd_submit(event,this.value)">
+	</div>
+</div>
+
+
+
+</body>
+</html>

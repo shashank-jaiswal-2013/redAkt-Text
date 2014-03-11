@@ -1,0 +1,84 @@
+/**
+ * Monokai theme
+ *
+ * Adapted from Wimer Hazenberg's TextMate theme of the same name
+ *
+ * @author Wimer Hazenberg
+ * @author Michael Fasani
+ * @author Craig Campbell
+ * @version 1.0.0
+ */
+pre {
+    background: transparent;
+    word-wrap: normal;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    font-family: consolas !important;
+    margin-bottom: 20px;
+}
+
+span, code {
+    font-family: consolas
+    ;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+span.comment {
+    color: #75715E;
+}
+
+span.constant {
+    color: #AE81FF;
+}
+
+span.storage {
+    color: #66D9EF;
+}
+
+span.string, span .comment.docstring {
+    color: #E6DB74;
+}
+
+span.support.tag {
+    color: #fff;
+}
+
+span.keyword {
+    /* @todo some keywords use this light blue, most use the pink */
+    /*color: #66D9EF;*/
+    color: #F92672;
+}
+
+span.selector {
+    color: #F92672;
+}
+
+span.inherited-class {
+    font-style: italic;
+}
+
+span.operator, span.support.tag-name , span.entity.tag {
+    color: #F92672;
+}
+
+span.entity, span.support.attribute, span.entity.attribute {
+    color: #A6E22E;
+}
+
+span.support, *[data-language="c"] .function.call {
+    color: #66D9EF;
+}
+
+*[data-language="html"] .support.operator {
+    color: #fff;
+}
+
+span.css-property, span.storage.function {
+    font-style: italic;
+}
+
+span.variable.global, span.variable.class, span.variable.instance {
+    color: #A6E22E;
+}
