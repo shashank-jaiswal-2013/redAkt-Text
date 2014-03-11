@@ -12,13 +12,13 @@ open command prompt & type
 >> adl redAkt.xml
 
 ===========
-##Features:
+###Features:
 >1. Semi-tranparent text editor (Can be customized to add an image of your choice as the editor's background image). You can controle the opacity of the editor.
 >2. Syntax highlighting for ~20 languages.
 >3. Change writing direction ltr <-> rtl.
 
 ===========
-##To be included:
+###To be included:
 >1. Atomic Save
 >2. Show unsaved Changes
 >3. Multiple Tab Support
